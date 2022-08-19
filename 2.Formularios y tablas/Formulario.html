@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> <!--Con esto siempre inicia-->
+
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="resultados.html" method="get"> <!--Agrupa una serie de elementos para que el usuario introduzca sus datos--> <!--El documento action hace referencia a donde lo queremos enviar-->
+            <!--Existen 2 metodos, el Get y el Post. El post envia la información y espera que ese resultado haga algo (Crear un nuevo usuario por ejemplo). Como no tengo una base de datos me va a dar error.-->
+            <!---->
+            <div>
+            <label  for="NombreDeUsuario">Nombre de usuario</label> <!--Label nos permite poner una etiqueta a uno de nuestros input, el for hace referencia al input que tenga un ID-->
+            <input id="NombreDeUsuario" name="NombreDeUsuario" required/>
+            </div>
+            <br>
+            <div>
+                <label for="Comentarios">Comentarios</label>
+                <textarea name="Comentarios" id="Comentarios"></textarea> <!--Sirve para poner comentarios-->
+            </div>
+            <br>
+            <div>
+            <label for="password">Contraseña</label> 
+            <input type="password" name="password" id="password" required/> <!--Required es obligatoio-->
+            </div>
+            <br>
+            <div>
+                <label for="edad">Cual es tu edad</label>
+                <input type="number" name="edad" id="edad" min="0" max="300" />
+            </div>
+            <div>
+                <label for="cumpleaños">Cual es tu fecha de nacimiento</label>
+                <input type="date"  name="cumpleaños" id="cumpleaños"/>
+            </div>
+            
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button> <!--Si el boton no tiene un tipo solo envia--> <!--Submit envia y reset resetea-->
+        </form>
+    </body>
+
+</html> <!--Con esto siempre termina-->
