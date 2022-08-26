@@ -1,0 +1,5 @@
+Para ver todas las pseudo clases:
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+Para ver todos los pseudo elementos: 
+https://www.w3schools.com/css/css_pseudo_elements.asp
