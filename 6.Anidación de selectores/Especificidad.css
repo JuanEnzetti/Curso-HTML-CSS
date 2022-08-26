@@ -1,0 +1,15 @@
+#h1-id{/*El id tiene una especificidad mayor que la clase*/
+    color: darkblue;
+}
+
+h1 {
+    color: blue;
+}
+
+h1{/*El segundo sobreescribe al primero*/
+    color: green;
+}
+
+p{
+    color: red !important; /*La etiqueta important lo que hace es que sea la más importante de todas*/
+}

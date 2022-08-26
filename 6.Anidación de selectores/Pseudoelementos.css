@@ -1,0 +1,47 @@
+/*Con : accedo a la pseudoclase y con :: a los pseudoelementos*/
+.Contenedor { 
+
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+span.Frase{
+
+    font-style: italic;
+
+}
+
+span.Frase::before{ /*Le digo que quiero modificar el principio|*/
+    content: '<<';
+    font-size: xx-small;
+}
+
+span.Frase::after{ /*Le digo que quiero modificar la parte final*/
+    content: '>>';
+    font-size: xx-small;
+}
+
+.libro{
+    background-color: bisque;
+    padding: 15px;
+    font-family: Arial;
+
+}
+
+.libro p::first-letter{/*Le digo que quiero modificar la primera letra*/
+    font-size: xx-large;
+}
+
+.libro p::first-line{/*Se modifique la primera linea*/
+    color: brown;
+}
+
+.libro p::selection{ /*Cuando me pinte el texto quiero que sea color chocolate y que las palabras esten en verde lima*/
+    background-color: chocolate;
+    color: lime;
+}
+
+.Listado li::marker{ /*Quiero que todo los puntos de mi listado se cambien*/
+    color: red;
+}
